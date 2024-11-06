@@ -1,0 +1,48 @@
+﻿@model IEnumerable<TODOWebApp.Models.TodoTaskViewModel>
+
+@{
+    ViewData["Title"] = "User Tasks";
+    var userId = ViewData["UserId"] as Guid?;
+}
+
+<h1>User Tasks</h1>
+
+<a asp-controller="TodoTask" asp-action="Create" asp-route-userId="@userId" class="btn btn-primary">Add New Task</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().DateCreated)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().IsCompleted)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => task.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => task.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => task.DateCreated)
+                </td>
+                <td>
+                    @Html.CheckBoxFor(modelItem => task.IsCompleted, new { @class = "form-check-input" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
