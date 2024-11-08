@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TODOWebApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\micha\\source\\repos\\TODOWebApp\\TODOWebApp\\wwwroot\\css\\darkmode.css",
+      "PackagePath": "staticwebassets\\css\\darkmode.css"
+    },
+    {
       "Id": "C:\\Users\\micha\\source\\repos\\TODOWebApp\\TODOWebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

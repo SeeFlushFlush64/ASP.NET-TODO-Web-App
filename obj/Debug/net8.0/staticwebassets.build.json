@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XED9VXuM2PZfl5cr6qtfhZ5JG4D7/ltNAFEG86rRlJ4=",
+  "Hash": "3rP+NKTzLRUN6oFRzuE+jxybxztYr5v569Aq7/wQKuU=",
   "Source": "TODOWebApp",
   "BasePath": "_content/TODOWebApp",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\micha\\source\\repos\\TODOWebApp\\TODOWebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TODOWebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\micha\\source\\repos\\TODOWebApp\\TODOWebApp\\wwwroot\\css\\darkmode.css",
+      "SourceId": "TODOWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\micha\\source\\repos\\TODOWebApp\\TODOWebApp\\wwwroot\\",
+      "BasePath": "_content/TODOWebApp",
+      "RelativePath": "css/darkmode.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\darkmode.css"
     },
     {
       "Identity": "C:\\Users\\micha\\source\\repos\\TODOWebApp\\TODOWebApp\\wwwroot\\css\\site.css",

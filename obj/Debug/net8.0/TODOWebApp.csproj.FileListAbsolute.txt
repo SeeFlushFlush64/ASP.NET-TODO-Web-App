@@ -225,3 +225,4 @@ C:\Users\micha\source\repos\TODOWebApp\TODOWebApp\obj\Debug\net8.0\refint\TODOWe
 C:\Users\micha\source\repos\TODOWebApp\TODOWebApp\obj\Debug\net8.0\TODOWebApp.pdb
 C:\Users\micha\source\repos\TODOWebApp\TODOWebApp\obj\Debug\net8.0\TODOWebApp.genruntimeconfig.cache
 C:\Users\micha\source\repos\TODOWebApp\TODOWebApp\obj\Debug\net8.0\ref\TODOWebApp.dll
+C:\Users\micha\source\repos\TODOWebApp\TODOWebApp\obj\Debug\net8.0\TODOWebApp.sourcelink.json

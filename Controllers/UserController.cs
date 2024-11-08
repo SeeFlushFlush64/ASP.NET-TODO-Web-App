@@ -15,10 +15,10 @@ namespace TODOWebApp.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             List<UserViewModel> userList = new List<UserViewModel>();
-            HttpResponseMessage response = _httpClient.GetAsync(_httpClient.BaseAddress + "/user/GetAll").Result;
+            HttpResponseMessage response = await _httpClient.GetAsync(_httpClient.BaseAddress + "/user/GetAll");
             if (response.IsSuccessStatusCode)
             {
                 string data = response.Content.ReadAsStringAsync().Result;

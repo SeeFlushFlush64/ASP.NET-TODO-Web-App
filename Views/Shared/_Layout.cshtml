@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TODOWebApp.styles.css" asp-append-version="true" />
+    <!-- Dark Mode CSS -->
+    <link rel="stylesheet" href="~/css/darkmode.css" id="dark-mode-css" disabled />
 </head>
 <body>
     <header>
@@ -26,6 +28,8 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Users</a>
                         </li>
                     </ul>
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="theme-toggle" class="btn btn-outline-secondary">Toggle Dark Mode</button>
                 </div>
             </div>
         </nav>
@@ -44,6 +48,29 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- JavaScript for Theme Toggle -->
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const darkModeCss = document.getElementById('dark-mode-css');
+            const isDarkMode = darkModeCss.disabled;
+            darkModeCss.disabled = !isDarkMode;
+            localStorage.setItem('darkMode', isDarkMode ? 'enabled' : 'disabled');
+        }
+
+        // Initialize theme based on user's preference in localStorage
+        (function () {
+            const darkModeCss = document.getElementById('dark-mode-css');
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                darkModeCss.disabled = false;
+            }
+        })();
+
+        // Event listener for the toggle button
+        document.getElementById('theme-toggle').addEventListener('click', toggleDarkMode);
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
